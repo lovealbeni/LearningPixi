@@ -27,10 +27,10 @@ PIXI.loader
 function setup() {
 
   //Create the cat sprite
-  let cat = new PIXI.Sprite(PIXI.loader.resources["images/cat.png"].texture);
+  // let cat = new PIXI.Sprite(PIXI.loader.resources["images/cat.png"].texture);
   
   //You can also create the `cat` sprite from the texture, like this:
-  //let cat = new PIXI.Sprite(PIXI.TextureCache["images/cat.png"]);
+  let cat = new PIXI.Sprite(PIXI.TextureCache["images/cat.png"]);
 
   //Add the cat to the stage
   app.stage.addChild(cat);
